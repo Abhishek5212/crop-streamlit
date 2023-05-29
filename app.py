@@ -11,7 +11,6 @@ model = pickle.load(open('proj_nb.pkl', 'rb'))
 def predict_note_authentication(N,P,K,temperature,humidity,ph,rainfall):
   output= model.predict([[N,P,K,temperature,humidity,ph,rainfall]])
   
-  print(prediction)
     if prediction==['apple']:
         output='Apple'
     if prediction==['banana']:
@@ -57,7 +56,8 @@ def predict_note_authentication(N,P,K,temperature,humidity,ph,rainfall):
     
     else:
         output='watermelon'
-  return prediction
+  print(output)
+  return output
 
 def main():
     
