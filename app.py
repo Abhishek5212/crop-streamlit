@@ -97,6 +97,6 @@ html_temp = """
 </div>
 </div>
 """
-    st.markdown(html_temp,unsafe_allow_html=True)
+st.markdown(html_temp,unsafe_allow_html=True)
 if __name__=='__main__':
   main()
