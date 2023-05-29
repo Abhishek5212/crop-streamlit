@@ -10,52 +10,50 @@ model = pickle.load(open('proj_nb.pkl', 'rb'))
 
 def predict_note_authentication(N,P,K,temperature,humidity,ph,rainfall):
   output= model.predict([[N,P,K,temperature,humidity,ph,rainfall]])
-  
-    if prediction==['apple']:
-        output='Apple'
-    if prediction==['banana']:
-        output='Banana'
-    if prediction==['blackgram']:
-        output='Blackgram'
-    if prediction==['chickpea']:
-        output='chickpea'
-    if prediction==['coconut']:
-        output='coconut'
-    if prediction==['coffee']:
-        output='coffee'
-    if prediction==['cotton']:
-        output='cotton'
-    if prediction==['grapes']:
-        output='grapes'
-    if prediction==['jute']:
-        output='jute'
-    if prediction==['kidneybeans']:
-        output='kidneybeans'
-    if prediction==['lentil']:
-        output='lentil'
-    if prediction==['maize']:
-        output='maize'
-    if prediction==['mango']:
-        output='mango'
-    if prediction==['mothbeans']:
-        output='mothbeans'
-    if prediction==['mungbean']:
-        output='mungbean'
-    if prediction==['muskmelon']:
-        output='muskmelon'
-    if prediction==['orange']:
-        output='orange'
-    if prediction==['papaya']:
-        output='papaya'
-    if prediction==['pigeonpeas']:
-        output='pigeonpeas'
-    if prediction==['pomegranate']:
-        output='pomegranate'
-    if prediction==['rice']:
-        output='rice'
-    
-    else:
-        output='watermelon'
+  if prediction==['apple']:
+    output='Apple'
+  if prediction==['banana']:
+    output='Banana'
+  if prediction==['blackgram']:
+    output='Blackgram'
+  if prediction==['chickpea']:
+    output='chickpea'
+  if prediction==['coconut']:
+    output='coconut'
+  if prediction==['coffee']:
+    output='coffee'
+  if prediction==['cotton']:
+    output='cotton'
+  if prediction==['grapes']:
+    output='grapes'
+  if prediction==['jute']:
+    output='jute'
+  if prediction==['kidneybeans']:
+    output='kidneybeans'
+  if prediction==['lentil']:
+    output='lentil'
+  if prediction==['maize']:
+    output='maize'
+  if prediction==['mango']:
+    output='mango'
+  if prediction==['mothbeans']:
+    output='mothbeans'
+  if prediction==['mungbean']:
+    output='mungbean'
+  if prediction==['muskmelon']:
+    output='muskmelon'
+  if prediction==['orange']:
+    output='orange'
+  if prediction==['papaya']:
+    output='papaya'
+  if prediction==['pigeonpeas']:
+    output='pigeonpeas'
+  if prediction==['pomegranate']:
+    output='pomegranate'
+  if prediction==['rice']:
+    output='rice'
+  else:
+    output='watermelon'
   print(output)
   return output
 
