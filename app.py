@@ -80,23 +80,23 @@ humidity= st.number_input("Enter Humidity",1,100)
 ph = st.number_input("Enter pH value",3,7)
 rainfall= st.number_input("Enter Rainfall amount",100,200)
     
-    result=""
-    if st.button("Predict"):
-      result=predict_note_authentication(N,P,K,temperature,humidity,ph,rainfall)
-      st.success('You should grow: {}'.format(result))
+result=""
+if st.button("Predict"):
+  result=predict_note_authentication(N,P,K,temperature,humidity,ph,rainfall)
+  st.success('You should grow: {}'.format(result))
       
-    if st.button("About"):
-      st.header("Developed by ABHISHEK KUMAR SINGH")
-      st.subheader("Student , Department of Computer Engineering")
-    html_temp = """
-    <div class="" style="background-color:green;" >
-    <div class="clearfix">           
-    <div class="col-md-12">
-    <center><p style="font-size:20px;color:white;margin-top:10px;">SVM & RANDOM FOREST CLASSIFICATION</p></center> 
-    </div>
-    </div>
-    </div>
-    """
+if st.button("About"):
+  st.header("Developed by ABHISHEK KUMAR SINGH")
+  st.subheader("Student , Department of Computer Engineering")
+html_temp = """
+<div class="" style="background-color:green;" >
+<div class="clearfix">           
+<div class="col-md-12">
+<center><p style="font-size:20px;color:white;margin-top:10px;">SVM & RANDOM FOREST CLASSIFICATION</p></center> 
+</div>
+</div>
+</div>
+"""
     st.markdown(html_temp,unsafe_allow_html=True)
 if __name__=='__main__':
   main()
